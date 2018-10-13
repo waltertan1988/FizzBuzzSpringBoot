@@ -21,7 +21,7 @@ public class IntegerToBuzzServiceImpl implements IntegerToStringService {
 
 	@Override
 	public boolean support(int n) {
-		return 0 == n%5;
+		return 0 == n%5 || String.valueOf(n).contains("5");
 	}
 
 }

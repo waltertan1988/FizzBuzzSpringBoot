@@ -21,7 +21,7 @@ public class IntegerToFizzServiceImpl implements IntegerToStringService {
 
 	@Override
 	public boolean support(int n) {
-		return 0 == n%3;
+		return 0 == n%3 || String.valueOf(n).contains("3");
 	}
 
 }

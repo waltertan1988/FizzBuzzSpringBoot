@@ -21,6 +21,12 @@ public class IntegerToBuzzServiceImplTest extends BaseTests{
 	}
 	
 	@Test
+	public void supportTrueStage2() {
+		int n = 51;
+		Assert.assertTrue(integerToStringService.support(n));
+	}
+	
+	@Test
 	public void supportFalse() {
 		int n = 3;
 		Assert.assertFalse(integerToStringService.support(n));
